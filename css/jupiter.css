@@ -1,0 +1,39 @@
+/*Fonte importada do google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/*Adicionando uma imagem de fundo fixa e tamanho que cubra todo a tela*/
+body{
+    background-image: url(../img/FundoJupiter.png);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/*Informações do conteúdo da card*/
+.content{
+    font-family: 'Poppins', sans-serif; /*Fonte da card*/
+    background-color: white; /*Cor*/
+    width: 720px; /*Largura/comprimento*/
+    padding: 20px; /* distância interna entre um elemento e sua borda*/
+    margin: 60px auto 0 90px; /*área de margem nos quatro lados do elemento*/
+    border-radius: 5px; /*Arredondamento das pontas da card*/
+}
+
+/*Definindo uma animação para quando o mouse passa pela imagem*/
+img[for="imagem"]:hover{
+    transform: scale(1.1); /*Aumenta a imagem numa escala de 1.1*/
+    transition: 0.3s all ease-in-out; /*Transição de 3 segundos*/
+}
+
+/*Definindo as informações dos links com id de inscricao*/
+#inscricao{
+    text-decoration: none; /*Retira qualquer decoração do texto*/
+    font-family: 'Poppins', sans-serif;
+    color: darkblue;
+}
+
+/*Definindo as informações dos links com id de inscricao quando o mouse passa por eles*/
+#inscricao:hover{
+    transform: scale(1.1); /*Aumenta a palavra numa escala de 1.1*/
+    transition: 0.3s all ease-in-out; /*Transição de 3 segundos*/
+    color: cornflowerblue; /*Modifica a cor da fonte*/
+}
