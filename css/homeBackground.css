@@ -1,0 +1,19 @@
+/*Fonte importada do google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/*Adicionando uma imagem de fundo fixa e tamanho que cubra todo a tela*/
+body{
+    background-image: url(../img/FundoHome.png);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/*Informações do conteúdo da card*/
+.content{
+    font-family: 'Poppins', sans-serif; /*Fonte da card*/
+    background-color: white; /*Cor*/
+    width: 720px; /*Largura/comprimento*/
+    padding: 20px; /* distância interna entre um elemento e sua borda*/
+    margin: 80px auto 0 auto; /*área de margem nos quatro lados do elemento*/
+    border-radius: 5px; /*Arredondamento das pontas da card*/
+}
