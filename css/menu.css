@@ -1,0 +1,88 @@
+/*Fonte importada do google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Configuração da nav*/
+nav{
+    position: relative; /*Posição relativa*/
+    margin: 50px auto; /*Área de margem nos quatro lados do elemento*/
+    width: 500px; /*Comprimento/Largura*/
+    height: 50px; /*Altura*/
+    background: rgb(0, 0, 0); /*Cor do fundo*/
+    border-radius: 8px; /*Arredondamento das bordas da caixa nav*/
+    font-size: 0;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.1); /*Sombra da caixa nav*/
+}
+
+/*Configuração dos elementos da nav*/
+nav a{
+    font-size: 15px; /*Tamanho da fonte*/
+    text-transform: uppercase; /*Todas as letras das palavras estarão em letre maiúscula*/
+    color: white; /*Cor da fonte*/
+    text-decoration: none; /*Retira as decorações automáticas do texto*/
+    line-height: 50px;/*Altura da linha*/
+    position: relative; /*Posição relativa*/
+    z-index: 1; /*Página bidimensional*/
+    display: inline-block; /*Posicionamento das palavras deve ser em linha horizontal e permanente*/
+    text-align: center; /*Texto alinhado no centro*/
+}
+
+/*Configuração da classe de animação*/
+nav .animacao{
+    position: absolute; /*Posição absoluta*/
+    height: 5px; /*Altura*/
+    top: 0; /*Animação acontecerá no topo da nav*/
+    z-index: 0;
+    background: rgb(33, 3, 199); /*Cor*/
+    border-radius: 8px; /*Arredondamento de 8px*/
+    transition: all .5s ease 0s; /*Possue 5s de transição*/
+}
+
+a:nth-child(1){ /*nth-child(1) significa que estamos selecionando o primeiro elemento da nav*/
+    width: 100px; /*Tamanho da 'nav .animacao' no primeiro elemento*/
+}
+
+nav .start-home, a:nth-child(1):hover~.animacao{ /*'.start-home' significa que a animação 
+    começa por home, mas quando o mouse é trazido ao elemento 1, é onde a animação deve seguir*/
+    width: 100px; /*Tamanho da 'nav .animacao'*/
+    left: 0; /*Distância com a borda da esquerda*/
+}
+
+a:nth-child(2){ /*nth-child(2) significa que estamos selecionando o segundo elemento da nav*/
+    width: 110px; /*Tamanho da 'nav .animacao' no segundo elemento*/
+}
+
+nav .start-cursos, a:nth-child(2):hover~.animacao{ /*'.start-home' significa que a animação 
+    começa por home, mas quando o mouse é trazido ao elemento 2, é onde a animação deve seguir*/
+    width: 110px;
+    left: 100px;
+}
+
+a:nth-child(3){ /*nth-child(3) significa que estamos selecionando o terceiro elemento da nav*/
+    width: 130px; /*Tamanho da 'nav .animacao' no terceiro elemento*/
+}
+
+nav .start-contato, a:nth-child(3):hover~.animacao{ /*'.start-home' significa que a animação 
+    começa por home, mas quando o mouse é trazido ao elemento 3, é onde a animação deve seguir*/
+    width: 130px;
+    left: 210px;
+}
+
+a:nth-child(4){ /*nth-child(4) significa que estamos selecionando o quarto elemento da nav*/
+    width: 160px; /*Tamanho da 'nav .animacao' no quarto elemento*/
+}
+
+nav .start-formulario, a:nth-child(4):hover~.animacao{ /*'.start-home' significa que a animação 
+    começa por home, mas quando o mouse é trazido ao elemento 4, é onde a animação deve seguir*/
+    width: 160px;
+    left: 340px;
+}
+
+/*Rodapé do site*/
+.footer{
+    font-family: 'Poppins', sans-serif; /*Fonte*/
+    color: white; /*Cor*/
+}
