@@ -1,0 +1,53 @@
+/*Fonte importada do google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/*Adicionando uma imagem de fundo fixa e tamanho que cubra todo a tela*/
+body{
+    background-image: url(../img/FundoHome.png);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/*Informações do conteúdo da card*/
+.content{
+    font-family: 'Poppins', sans-serif; /*Fonte da card*/
+    background-color: white; /*Cor*/
+    width: 690px; /*Largura/comprimento*/
+    padding: 20px; /* distância interna entre um elemento e sua borda*/
+    margin: 140px auto 0 auto; /*área de margem nos quatro lados do elemento*/
+    border-radius: 5px; /*Arredondamento das pontas da card*/
+}
+
+/*Definindo as informações dos links com id de formulario*/
+#formulario{
+    text-decoration: none; /*Retira qualquer decoração do texto*/
+    font-family: 'Poppins', sans-serif;
+    color: #0003bb;
+}
+
+/*Definindo as informações dos links com id de formulario quando o mouse passa por eles*/
+#formulario:hover{
+    transform: scale(1.1); /*Aumenta a palavra numa escala de 1.1*/
+    transition: 0.3s all ease-in-out; /*Transição de 3 segundos*/
+    color: cornflowerblue; /*Modifica a cor da fonte*/
+}
+
+/*Definindo as informações dos links com id de contato*/
+#contato{
+    text-decoration: none; /*Retira qualquer decoração do texto*/
+    font-family: 'Poppins', sans-serif;
+    color: #0003bb;
+}
+
+/*Definindo as informações dos links com id de contato quando o mouse passa por eles*/
+#contato:hover{
+    transform: scale(1.1); /*Aumenta a palavra numa escala de 1.1*/
+    transition: 0.3s all ease-in-out; /*Transição de 3 segundos*/
+    color: cornflowerblue; /*Modifica a cor da fonte*/
+}
+
+/*Rodapé do site*/
+.footer{
+    font-family: 'Poppins', sans-serif; /*Fonte*/
+    color: white; /*Cor*/
+}
