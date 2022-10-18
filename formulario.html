@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Linkando o css-->
+    <link rel="stylesheet" href="./css/formulario.css">
+    <link rel="stylesheet" href="style.css">
+    <!--Imagem da aba do Browse-->
+    <link rel="shortcut icon" type="image/png" href="TerraAbaBrowser.png">
+    <!--Nomeando a aba-->
+    <title>Formulário</title>
+</head>
+
+<body>
+   
+            <!-- Início do formulário -->
+            <form action="https://formsubmit.co/gabihelenabritto@gmail.com" method="POST">
+                <input type="hidden" name="_next" value=https://gabibrittoo.github.io/PequenosAstros/sucesso.html">
+        
+                <input type="hidden" name="_autoresponse" value="Recebemos sua mensagem! Obrigado pelo contato, logo responderemos!">
+   
+                <div class="container">
+                    <div class="form-image">
+                        <img src="./img/undraw_outer_space_re_u9vd.svg" alt="">
+                    </div>
+                    <div class="form">
+                        <form action="#">
+                            <div class="form-header">
+                                <div class="title">
+                                    <h1>Cadastre-se</h1>
+                                </div>
+                                
+                            </div>
+            
+                            <div class="input-group">
+                                <div class="input-box">
+                                    <label for="firstname">Nome Inteiro</label>
+                                    <input id="firstname" type="text" name="firstname" placeholder="Digite seu nome inteiro" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for="email">E-mail</label>
+                                    <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+                                </div>
+            
+                                <div class="input-box">
+                                    <label for="number">Telefone</label>
+                                    <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
+                                </div>
+            
+                            </div>
+            
+                            
+                                <!--Campo de cep -->
+                                <div class="input-group">
+                                <div class="input-box">
+                                    <label for="cep"><strong>CEP</strong></label>
+                                    <input type="text" id="cep" placeholder="Cep" required>
+            
+                                </div>
+                                <!--Campo de endereco -->
+                                <div class="input-box">
+                                    <label for="endereco"><strong>Endereço</strong></label>
+                                    <input type="text" id="endereco" placeholder="Endereço" required>
+            
+                                </div>
+                                <!--Campo de numero -->
+                                <div class="input-box">
+                                    <label for="numero"><strong>Número</strong></label>
+                                    <input type="text" id="numero" placeholder="Número" required>
+            
+                                </div>
+                                <!--Campo de bairro -->
+                                <div class="input-box">
+                                    <label for="bairro"><strong>Bairro</strong></label>
+                                    <input type="text" id="bairro" placeholder="Bairro" required>
+                                </div>
+                                <!--Campo de cidade -->
+                                <div class="input-box">
+                                    <label for="cidade"><strong>Cidade</strong></label>
+                                    <input type="text" id="cidade" placeholder="Cidade" required>
+            
+                                </div>
+                                <!--Campo de estado -->
+                                <div class="input-box">
+                                    <label for="estado"><strong>Estado</strong></label>
+                                    <input type="text" id="estado" placeholder="Estado" required>
+            
+                                </div>
+                            </div>
+            
+                            
+            
+            
+            
+                            <div class="gender-inputs">
+                                <div class="gender-title">
+                                    <h6>Sua jornada</h6>
+                                </div>
+            
+                                <div class="gender-group">
+                                    <div class="gender-input">
+                                        <input id="mercurio" type="radio" name="gender">
+                                        <label for="mercurio">Mercurio</label>
+                                    </div>
+            
+                                    <div class="gender-input">
+                                        <input id="venus" type="radio" name="gender">
+                                        <label for="venus">Vênus</label>
+                                    </div>
+            
+                                    <div class="gender-input">
+                                        <input id="others" type="radio" name="gender">
+                                        <label for="others">Terra</label>
+                                    </div>
+            
+                                    <div class="gender-input">
+                                        <input id="marte" type="radio" name="gender">
+                                        <label for="marte">Marte</label>
+                                    </div>
+                                    <div class="gender-input">
+                                        <input id="jupiter" type="radio" name="gender">
+                                        <label for="jupiter">Jupiter</label>
+                                    </div>
+            
+                                    <div class="gender-input">
+                                        <input id="saturno" type="radio" name="gender">
+                                        <label for="saturno">Saturno</label>
+                                    </div>
+            
+                                    <div class="gender-input">
+                                        <input id="urano" type="radio" name="gender">
+                                        <label for="urano">Urano</label>
+                                    </div>
+            
+                                    <div class="gender-input">
+                                        <input id="netuno" type="radio" name="gender">
+                                        <label for="netuno">Netuno</label>
+                                    </div>
+                                    <div class="gender-input">
+                                        <input id="lua" type="radio" name="gender">
+                                        <label for="lua">Lua</label>
+                                    </div>
+                                    <div class="gender-input">
+                                        <input id="all" type="radio" name="gender">
+                                        <label for="all">TODAS</label>
+                                    </div>
+            
+                                </div>
+                            </div>
+            
+                            <div class="continue-button">
+                                <button type="submit">Enviar</button>
+                            </div>
+                              <!--Adicionando um link de redirecionamento para home-->
+                    <a id="retorno" href="index.html">&#128640; Retornar à página Home &#128640;</a>
+                        </form>
+                    </div>
+                </div>
+                  
+   
+</body>
+<script src="./js/formulario.js" type="module" defer></script>
+
+</html>
