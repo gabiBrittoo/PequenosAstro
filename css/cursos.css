@@ -1,0 +1,127 @@
+/*Fonte importada do google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/*Adicionando uma imagem de fundo fixa e tamanho que cubra todo a tela*/
+body{
+    background-image: url(../img/FundoHome.png);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/*Informações do conteúdo da card*/
+.content{
+    font-family: 'Poppins', sans-serif; /*Fonte da card*/
+    background-color: white; /*Cor*/
+    width: 720px; /*Largura/comprimento*/
+    padding: 20px; /* distância interna entre um elemento e sua borda*/
+    margin: 180px auto 0 auto; /*área de margem nos quatro lados do elemento*/
+    border-radius: 5px; /*Arredondamento das pontas da card*/
+}
+
+/*Modifica a aba em geral*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif; /*Define a fonte*/
+}
+
+a, button{
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Ajustando a div de class dropdown*/
+.dropdown{
+    height: 10vh; /*Altura*/
+    display: flex; /*Display é a propriedade mais importante do CSS para controlar o layout*/
+    justify-content: space-around; /*Descrever o alinhamento do contêiner de caixa flexível*/
+    align-items: center; /*Alinha os elementos no centro*/
+    width: 80%; /*Largura/comprimento*/
+    margin: auto; /*Margem automática a aba*/
+}
+
+.cursos_dropdown{
+    position: relative;
+}
+
+/*Definindo a configuração da lista*/
+.cursos_dropdown ul{
+    position: absolute; /*Posição*/
+    background: white; /*Cor*/
+    margin-top: 10px; /*Distância com o topo*/
+    width: 200px; /*Largura/comprimento*/
+    height: 300px; /*Altura*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column; /*Direção do contâiner obedece será de coluna*/
+    list-style: none; /*Define que a lista não deve acompanhar outro estilo*/
+    border-radius: 5px; /*Arredonda as bordas do elemento*/
+    opacity: 0; /*Retira a opacidade*/
+    transform: translateY(10px); /*Quando a lista surge a uma pequena animação*/
+    transition: all 0.4s ease;
+}
+
+/*Definindo a configuração dos elementos da lista*/
+.cursos_dropdown a{
+    color: black;
+    text-decoration: none;
+}
+
+/*Definindo a configuração dos elementos da lista*/
+.cursos_dropdown a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center; /*Centraliza os elementos de 'a'*/
+    align-items: center;
+}
+
+/*Definindo uma modificação para os elementos da lista quando o mouse passa por eles*/
+.cursos_dropdown a:hover{
+    background-color: rgba(32, 3, 199, 0.397); /*Altera a cor da fonte*/
+}
+
+/*Definindo a configuração do button*/
+.dropdown button{
+    background: none; /*Sem cor no fundo*/
+    border: none; /*Sem borda*/
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer; /*Quando o cursor do mouse passa por ele, se modifica para pointer*/
+}
+
+/*Definindo a configuração do button quando o mouse passa por ele*/
+.dropdown button:hover{
+    color: rgb(33, 3, 199); /*Muda a cor da fonte*/
+}
+
+/*Definindo o foco*/
+.cursos_dropdown button:focus + ul{
+    opacity: 1; /*A opacidade da lista, antes definida por 0, virá 1 quando 'Cursos' é clicado*/
+    transform: translateY(0px); /*Animação com o fechamento da lista*/
+}
+
+/*Definindo as informações dos links com id de retorno*/
+#retorno{
+    text-decoration: none; /*Retira qualquer decoração do texto*/
+    font-family: 'Poppins', sans-serif;
+    color: #0003bb;
+}
+
+/*Definindo as informações dos links com id de retorno quando o mouse passa por eles*/
+#retorno:hover{
+    transform: scale(1.1); /*Aumenta a palavra numa escala de 1.1*/
+    transition: 0.3s all ease-in-out; /*Transição de 3 segundos*/
+    color: cornflowerblue; /*Modifica a cor da fonte*/
+}
+
+/*Rodapé do site*/
+.footer{
+    font-family: 'Poppins', sans-serif; /*Fonte*/
+    color: white; /*Cor*/
+}
