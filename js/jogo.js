@@ -96,7 +96,7 @@ const createCard = (carta) => {
     /*Ao ser clicada a frente da carta é revelada*/
     card.addEventListener('click', revealCard);
     card.setAttribute('data-carta', carta)
-
+    /*retorna uma carta*/
     return card;
 }
 
