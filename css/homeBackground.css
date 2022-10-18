@@ -17,3 +17,17 @@ body{
     margin: 80px auto 0 auto; /*área de margem nos quatro lados do elemento*/
     border-radius: 5px; /*Arredondamento das pontas da card*/
 }
+
+/*Definindo as informações dos links com id de inscricao*/
+#inscricao{
+    text-decoration: none; /*Retira qualquer decoração do texto*/
+    font-family: 'Poppins', sans-serif;
+    color: darkblue;
+}
+
+/*Definindo as informações dos links com id de inscricao quando o mouse passa por eles*/
+#inscricao:hover{
+    transform: scale(1.1); /*Aumenta a palavra numa escala de 1.1*/
+    transition: 0.3s all ease-in-out; /*Transição de 3 segundos*/
+    color: cornflowerblue; /*Modifica a cor da fonte*/
+}
