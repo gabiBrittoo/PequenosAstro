@@ -4,7 +4,7 @@
 /*Adicionando uma imagem de fundo fixa e tamanho que cubra todo a tela*/
 body{
     font-family: 'Poppins', sans-serif;
-    background-image: url(../imgg/FundoPadrao.png); /*Imagem de fundo da aba*/
+    background-image: url(../img/FundoPadrao.png); /*Imagem de fundo da aba*/
     background-attachment: fixed;
     background-size: cover;
 }
@@ -48,7 +48,7 @@ body{
 
 /*Configuração do fundo da card*/
 .back{
-    background-image: url(../imgg/FundoCards.png); /*Imagem do fundo*/
+    background-image: url(../img/FundoCards.png); /*Imagem do fundo*/
     backface-visibility: hidden; /*Impede que depois que clicada, a card continue com o fundo ao invés da frente*/
 }
 
