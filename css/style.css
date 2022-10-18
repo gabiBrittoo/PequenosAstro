@@ -1,0 +1,31 @@
+@media screen and (max-width: 768px){
+    section, aside{
+        width: 100%;
+        padding: 0;
+    }
+}
+
+
+@media screen and (max-width:600px){
+    #card_bodyx  {
+        float: none;
+        text-align: relative;
+        width: 100%;
+    }
+    footer p{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width:600px){
+    .content {
+        float: none;
+        text-align: relative;
+        width: 100%;
+    }
+    footer p{
+        display: none;
+    }
+    
+}
